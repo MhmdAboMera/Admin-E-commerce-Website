@@ -1,13 +1,88 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.navbar-center {
+    display: flex;
+}
+.width-350 {
+    max-width: 400px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px
+}
+.product-list .product-data {
+    background-color: #EEE;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 16px;
+}
+.product-list .product-data .contant-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+.product-list .product-data .contant-img img {
+    width: 80%;
+    height: 200px
+}
+.product-list .product-data h2,
+.category,
+.title {
+    color: #009688;
+    font-weight: bold;
+    font-size: 17px;
+    margin: 10px 0;
+}
+.product-list .product-data .des {
+    color: #777;
+    font-size: 13px;
+    margin-top: 0;
+}
+.product-list .product-data .price,
+.price {
+    color: #9C27B0;
+    font-size: 30px;
+    font-weight: bold;
+}
+.categryName {
+    padding: 0 16px;
+    color: #009688;
+    margin: 10px;
+}
+.max-width {
+    max-width: 100%;
+}
+.d-img {
+    width: 300px;
+}
+.description {
+    color: #777;
+    font-size: 17px;
+}
+.product-details {
+    padding: 20px 0 0 20px
+}
+.btn-bttt {
+    border: none;
+    padding: 5px 12px;
+    border-radius: 12px;
+    background-color: #F44336;
+    color: white;
+    font-weight: bold;
 }
